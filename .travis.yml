@@ -29,6 +29,7 @@ before_script:
   # INFO: here starts the coverity_scan build_command from above
 
 script:
+  - ls -la src/upx.out || true
   - ls -laR cov-int || true
 ##- cat cov-int/scm_log.txt || true
   - true
